@@ -1,0 +1,14 @@
+#custom-div .ui-block-a {
+    width: 72% !important;
+}
+
+#custom-div .ui-block-b {
+    width: 28% !important;    
+}
+#logo-image{
+	outline-offset:-10px;  
+    border: 10px solid #999;
+  	text-align: center;
+  	width: 70%;
+}
+
