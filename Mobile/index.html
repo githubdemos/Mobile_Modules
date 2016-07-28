@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>Jquery Mobile Splitview</title>
-<meta name="viewport"
-	content="width=device-width, minimum-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
 <link rel="stylesheet" href="css/jquery.mobile.css" />
 <link rel="stylesheet" href="css/jquery.mobile.splitview.css" />
 <link rel="stylesheet" href="css/jquery.mobile.grids.collapsible.css" />
@@ -14,6 +14,7 @@
 <script type="text/javascript" src="js/jquery.mobile.js"></script>
 <script type="text/javascript" src="js/iscroll-wrapper.js"></script>
 <script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
 </head>
 
 <body>
@@ -374,40 +375,59 @@
 					<div data-role="fieldcontain">
 						<div class="ui-grid-a">
 							<div class="ui-block-a">
-								<label for="c_contacto">Contacto:</label> <input
-									type="text" name="c_contacto" id="c_contacto" value="" />
+								<label for="c_contacto">Contacto:</label> <input type="text"
+									name="c_contacto" id="c_contacto" value="" />
 							</div>
 							<div class="ui-block-b">
-								<label for="c_factura">Rut solicitante:</label> <input name="c_factura" id="c_factura"></input>
+								<label for="c_factura">Rut solicitante:</label> <input
+									name="c_factura" id="c_factura"></input>
 							</div>
 						</div>
 					</div>
+					<hr>
 					<div data-role="fieldcontain">
-						<table data-role="table" id="my-table" data-mode="reflow">
+					<div class="ui-alt-icon"><!-- Class added to the wrapper -->
+    <a href="#" data-icon="arrow-r">Delete</a>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-inline">Plus</a>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-minus ui-btn-icon-notext ui-btn-inline">Minus</a>
+    <a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-notext ui-btn-inline">Check</a>
+</div>
+						<table summary="This table lists all the JetBlue flights.">
+							<caption>Detalle Factura</caption>
 							<thead>
 								<tr>
-									<th>Rank</th>
-									<th>Movie Title</th>
-									<th>Year</th>
-									<th><abbr title="Rotten Tomato Rating">Rating</abbr></th>
-									<th>Reviews</th>
+									<th scope="col">Flight:</th>
+									<th scope="col">From:</th>
+									<th scope="col">To:</th>
 								</tr>
 							</thead>
+							<tfoot>
+								<tr>
+									<td colspan="5">Total: 3 flights</td>
+								</tr>
+							</tfoot>
 							<tbody>
 								<tr>
-									<th>1</th>
-									<td><a href="foo.com" data-rel="external">Citizen Kane</a></td>
-									<td>1941</td>
-									<td>100%</td>
-									<td>74</td>
+									<th scope="row"><a href="#" class="ui-btn ui-shadow ui-corner-all ui-icon-plus ui-btn-icon-notext ui-btn-b ui-btn-inline">Plus</a></th>
+									<td>Boston (BOS)</td>
+									<td>New York (JFK)</td>
+								</tr>
+								<tr>
+									<th scope="row">JetBlue 354</th>
+									<td>San Francisco (SFO)</td>
+									<td>Los Angeles (LAX)</td>
+								</tr>
+								<tr>
+									<th scope="row">JetBlue 465</th>
+									<td>New York (JFK)</td>
+									<td>Portland (PDX)</td>
 								</tr>
 							</tbody>
 						</table>
 					</div>
-
-
 					<div data-role="fieldcontain">
-						<label for="slider">Slider:</label> <input type="range" name="slider" id="slider" value="0" min="0" max="100" />
+						<label for="slider">Slider:</label> <input type="range"
+							name="slider" id="slider" value="0" min="0" max="100" />
 					</div>
 
 

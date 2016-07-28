@@ -11,4 +11,15 @@
   	text-align: center;
   	width: 70%;
 }
-
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+th { 
+  font-weight: bold; 
+}
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
