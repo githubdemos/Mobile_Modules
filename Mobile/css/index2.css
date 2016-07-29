@@ -1,0 +1,18 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+body {
+    margin: 0;
+    text-align: center;
+}
+
+#iframe_alpha {
+	width: 20%;
+	height: 100%;
+}
+
+#iframe_beta {
+	width: 79%;
+	height: 100%;
+}
